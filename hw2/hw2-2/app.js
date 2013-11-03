@@ -4,7 +4,6 @@ MongoClient.connect('mongodb://localhost:27017/weather', function(err, db) {
     if(err) throw err;
 
     var data = db.collection('data');
-    var query = {};
     var options = { 'sort' : [['State', 1],['Temperature',-1]] };
 
     var cursor = data.find({},{},options);
