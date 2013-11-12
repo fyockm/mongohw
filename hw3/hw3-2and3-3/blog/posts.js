@@ -31,12 +31,12 @@ function PostsDAO(db) {
         // now insert the post
         // hw3.2 TODO
         posts.insert(post, function (err, result) {
-            "user strict";
+            "use strict";
 
             if (err) return callback(err, null);
 
             console.log("Added new post.");
-            return callback(err, permalink);
+            callback(err, permalink);
         });
     }
 
@@ -89,9 +89,13 @@ function PostsDAO(db) {
         }
 
         // hw3.3 TODO
-        posts.update({'permalink': permalink}
-            , {$push: {comments: comment}}
-            , callback);
+        posts.update({'permalink': permalink}, {'$push': {'comments': comment}}, function(err, numModified) {
+            "use strict";
+
+            if (err) return callback(err, null);
+
+            callback(err, numModified);
+        });
     }
 }
 
