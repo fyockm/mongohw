@@ -1,0 +1,64 @@
+Mon Dec  2 20:37:42.339 [initandlisten] MongoDB starting : pid=10748 port=27018 dbpath=/data/rs2 64-bit host=minty
+Mon Dec  2 20:37:42.339 [initandlisten] db version v2.4.8
+Mon Dec  2 20:37:42.339 [initandlisten] git version: a350fc38922fbda2cec8d5dd842237b904eafc14
+Mon Dec  2 20:37:42.339 [initandlisten] build info: Linux ip-10-2-29-40 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_49
+Mon Dec  2 20:37:42.339 [initandlisten] allocator: tcmalloc
+Mon Dec  2 20:37:42.339 [initandlisten] options: { dbpath: "/data/rs2", fork: true, logpath: "2.log", oplogSize: 64, port: 27018, replSet: "m101", smallfiles: true }
+Mon Dec  2 20:37:42.346 [initandlisten] journal dir=/data/rs2/journal
+Mon Dec  2 20:37:42.346 [initandlisten] recover : no journal files present, no recovery needed
+Mon Dec  2 20:37:42.522 [initandlisten] waiting for connections on port 27018
+Mon Dec  2 20:37:42.522 [websvr] admin web console waiting for connections on port 28018
+Mon Dec  2 20:37:42.534 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:37:42.534 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Mon Dec  2 20:37:52.538 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:38:02.540 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:38:12.541 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:38:22.551 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:38:32.554 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:38:42.555 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:38:52.556 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:39:02.557 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:39:12.558 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:39:22.559 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:39:32.560 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:39:42.562 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:39:52.563 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:40:02.565 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:40:12.567 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:40:22.570 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:40:32.572 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:40:42.573 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:40:52.574 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:41:02.576 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:41:12.577 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:41:23.505 [rsStart] query local.system.replset ntoreturn:1 ntoskip:0 nscanned:0 keyUpdates:0 locks(micros) r:375694 nreturned:0 reslen:20 375ms
+Mon Dec  2 20:41:23.714 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:41:33.716 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:41:42.703 [TTLMonitor] query local.system.indexes query: { expireAfterSeconds: { $exists: true } } ntoreturn:0 ntoskip:0 nscanned:0 keyUpdates:0 locks(micros) r:112914 nreturned:0 reslen:20 112ms
+Mon Dec  2 20:41:43.717 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:41:53.719 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:42:03.719 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:42:13.720 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:42:23.722 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:42:33.724 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:42:43.727 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:42:53.729 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:42:54.101 [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+Mon Dec  2 20:42:54.128 [signalProcessingThread] now exiting
+Mon Dec  2 20:42:54.128 dbexit: 
+Mon Dec  2 20:42:54.128 [signalProcessingThread] shutdown: going to close listening sockets...
+Mon Dec  2 20:42:54.128 [signalProcessingThread] closing listening socket: 9
+Mon Dec  2 20:42:54.128 [signalProcessingThread] closing listening socket: 10
+Mon Dec  2 20:42:54.128 [signalProcessingThread] closing listening socket: 11
+Mon Dec  2 20:42:54.128 [signalProcessingThread] removing socket file: /tmp/mongodb-27018.sock
+Mon Dec  2 20:42:54.230 [signalProcessingThread] shutdown: going to flush diaglog...
+Mon Dec  2 20:42:54.230 [signalProcessingThread] shutdown: going to close sockets...
+Mon Dec  2 20:42:54.240 [signalProcessingThread] shutdown: waiting for fs preallocator...
+Mon Dec  2 20:42:54.240 [signalProcessingThread] shutdown: lock for final commit...
+Mon Dec  2 20:42:54.240 [signalProcessingThread] shutdown: final commit...
+Mon Dec  2 20:42:54.240 [signalProcessingThread] shutdown: closing all files...
+Mon Dec  2 20:42:54.240 [signalProcessingThread] closeAllFiles() finished
+Mon Dec  2 20:42:54.241 [signalProcessingThread] journalCleanup...
+Mon Dec  2 20:42:54.241 [signalProcessingThread] removeJournalFiles
+Mon Dec  2 20:42:54.322 [signalProcessingThread] shutdown: removing fs lock...
+Mon Dec  2 20:42:54.323 dbexit: really exiting now

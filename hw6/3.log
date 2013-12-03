@@ -1,0 +1,217 @@
+Mon Dec  2 20:43:43.745 [initandlisten] MongoDB starting : pid=11150 port=27019 dbpath=/data/rs3 64-bit host=minty
+Mon Dec  2 20:43:43.745 [initandlisten] db version v2.4.8
+Mon Dec  2 20:43:43.745 [initandlisten] git version: a350fc38922fbda2cec8d5dd842237b904eafc14
+Mon Dec  2 20:43:43.745 [initandlisten] build info: Linux ip-10-2-29-40 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_49
+Mon Dec  2 20:43:43.745 [initandlisten] allocator: tcmalloc
+Mon Dec  2 20:43:43.745 [initandlisten] options: { dbpath: "/data/rs3", fork: true, logpath: "3.log", oplogSize: 64, port: 27019, replSet: "m101", smallfiles: true }
+Mon Dec  2 20:43:43.781 [initandlisten] journal dir=/data/rs3/journal
+Mon Dec  2 20:43:43.781 [initandlisten] recover : no journal files present, no recovery needed
+Mon Dec  2 20:43:44.004 [initandlisten] waiting for connections on port 27019
+Mon Dec  2 20:43:44.004 [websvr] admin web console waiting for connections on port 28019
+Mon Dec  2 20:43:44.009 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:43:44.009 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Mon Dec  2 20:43:54.012 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:44:01.163 [initandlisten] connection accepted from 127.0.0.1:49660 #1 (1 connection now open)
+Mon Dec  2 20:44:04.014 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:44:14.021 [rsStart] trying to contact localhost:27017
+Mon Dec  2 20:44:14.025 [rsStart] replSet I am localhost:27019
+Mon Dec  2 20:44:14.025 [rsStart] replSet got config version 1 from a remote, saving locally
+Mon Dec  2 20:44:14.025 [rsStart] replSet info saving a newer config version to local.system.replset
+Mon Dec  2 20:44:14.027 [rsStart] replSet saveConfigLocally done
+Mon Dec  2 20:44:14.027 [rsStart] replSet STARTUP2
+Mon Dec  2 20:44:14.028 [rsSync] ******
+Mon Dec  2 20:44:14.028 [rsSync] creating replication oplog of size: 64MB...
+Mon Dec  2 20:44:14.028 [FileAllocator] allocating new datafile /data/rs3/local.1, filling with zeroes...
+Mon Dec  2 20:44:14.028 [FileAllocator] creating directory /data/rs3/_tmp
+Mon Dec  2 20:44:14.063 [FileAllocator] done allocating datafile /data/rs3/local.1, size: 128MB,  took 0.03 secs
+Mon Dec  2 20:44:14.064 [rsSync] ******
+Mon Dec  2 20:44:14.067 [rsSync] replSet initial sync pending
+Mon Dec  2 20:44:14.067 [rsSync] replSet initial sync need a member to be primary or secondary to do our initial sync
+Mon Dec  2 20:44:16.027 [rsHealthPoll] replSet member localhost:27018 is up
+Mon Dec  2 20:44:16.027 [rsHealthPoll] replSet member localhost:27017 is up
+Mon Dec  2 20:44:16.027 [rsHealthPoll] replSet member localhost:27017 is now in state SECONDARY
+Mon Dec  2 20:44:18.956 [initandlisten] connection accepted from 127.0.0.1:49664 #2 (2 connections now open)
+Mon Dec  2 20:44:20.031 [rsHealthPoll] replSet member localhost:27018 is now in state STARTUP2
+Mon Dec  2 20:44:25.987 [conn1] replSet RECOVERING
+Mon Dec  2 20:44:25.987 [conn1] replSet info voting yea for localhost:27017 (0)
+Mon Dec  2 20:44:26.039 [rsHealthPoll] replSet member localhost:27018 is now in state RECOVERING
+Mon Dec  2 20:44:26.039 [rsHealthPoll] replSet member localhost:27017 is now in state PRIMARY
+Mon Dec  2 20:44:30.069 [rsSync] replSet initial sync pending
+Mon Dec  2 20:44:30.069 [rsSync] replSet syncing to: localhost:27017
+Mon Dec  2 20:44:30.073 [rsSync] build index local.me { _id: 1 }
+Mon Dec  2 20:44:30.074 [rsSync] build index done.  scanned 0 total records. 0.001 secs
+Mon Dec  2 20:44:30.078 [rsSync] build index local.replset.minvalid { _id: 1 }
+Mon Dec  2 20:44:30.079 [rsSync] build index done.  scanned 0 total records. 0 secs
+Mon Dec  2 20:44:30.079 [rsSync] replSet initial sync drop all databases
+Mon Dec  2 20:44:30.079 [rsSync] dropAllDatabasesExceptLocal 1
+Mon Dec  2 20:44:30.079 [rsSync] replSet initial sync clone all databases
+Mon Dec  2 20:44:30.080 [rsSync] replSet initial sync data copy, starting syncup
+Mon Dec  2 20:44:30.080 [rsSync] oplog sync 1 of 3
+Mon Dec  2 20:44:30.080 [rsSync] oplog sync 2 of 3
+Mon Dec  2 20:44:30.080 [rsSync] replSet initial sync building indexes
+Mon Dec  2 20:44:30.080 [rsSync] oplog sync 3 of 3
+Mon Dec  2 20:44:30.080 [rsSync] replSet initial sync finishing up
+Mon Dec  2 20:44:30.111 [rsSync] replSet set minValid=529d3761:1
+Mon Dec  2 20:44:30.111 [rsSync] replSet initial sync done
+Mon Dec  2 20:44:31.026 [initandlisten] connection accepted from 127.0.0.1:49679 #3 (3 connections now open)
+Mon Dec  2 20:44:31.027 [initandlisten] connection accepted from 127.0.0.1:49680 #4 (4 connections now open)
+Mon Dec  2 20:44:31.027 [initandlisten] connection accepted from 127.0.0.1:49681 #5 (5 connections now open)
+Mon Dec  2 20:44:31.028 [initandlisten] connection accepted from 127.0.0.1:49682 #6 (6 connections now open)
+Mon Dec  2 20:44:31.029 [initandlisten] connection accepted from 127.0.0.1:49683 #7 (7 connections now open)
+Mon Dec  2 20:44:31.059 [rsBackgroundSync] replSet syncing to: localhost:27017
+Mon Dec  2 20:44:31.114 [rsSyncNotifier] replset setting oplog notifier to localhost:27017
+Mon Dec  2 20:44:32.118 [rsSync] replSet SECONDARY
+Mon Dec  2 20:44:37.999 [conn1] end connection 127.0.0.1:49660 (6 connections now open)
+Mon Dec  2 20:44:37.999 [initandlisten] connection accepted from 127.0.0.1:49692 #8 (7 connections now open)
+Mon Dec  2 20:44:38.052 [rsHealthPoll] replSet member localhost:27018 is now in state SECONDARY
+Mon Dec  2 20:44:46.993 [conn2] end connection 127.0.0.1:49664 (6 connections now open)
+Mon Dec  2 20:44:46.993 [initandlisten] connection accepted from 127.0.0.1:49694 #9 (7 connections now open)
+Mon Dec  2 20:45:08.027 [conn8] end connection 127.0.0.1:49692 (6 connections now open)
+Mon Dec  2 20:45:08.027 [initandlisten] connection accepted from 127.0.0.1:49700 #10 (7 connections now open)
+Mon Dec  2 20:45:17.033 [conn9] end connection 127.0.0.1:49694 (6 connections now open)
+Mon Dec  2 20:45:17.033 [initandlisten] connection accepted from 127.0.0.1:49706 #11 (7 connections now open)
+Mon Dec  2 20:45:38.070 [conn10] end connection 127.0.0.1:49700 (6 connections now open)
+Mon Dec  2 20:45:38.070 [initandlisten] connection accepted from 127.0.0.1:49710 #12 (7 connections now open)
+Mon Dec  2 20:45:47.090 [conn11] end connection 127.0.0.1:49706 (6 connections now open)
+Mon Dec  2 20:45:47.090 [initandlisten] connection accepted from 127.0.0.1:49712 #13 (7 connections now open)
+Mon Dec  2 20:46:08.128 [conn12] end connection 127.0.0.1:49710 (6 connections now open)
+Mon Dec  2 20:46:08.128 [initandlisten] connection accepted from 127.0.0.1:49717 #14 (7 connections now open)
+Mon Dec  2 20:46:17.140 [conn13] end connection 127.0.0.1:49712 (6 connections now open)
+Mon Dec  2 20:46:17.140 [initandlisten] connection accepted from 127.0.0.1:49719 #15 (7 connections now open)
+Mon Dec  2 20:46:38.182 [conn14] end connection 127.0.0.1:49717 (6 connections now open)
+Mon Dec  2 20:46:38.182 [initandlisten] connection accepted from 127.0.0.1:49723 #16 (7 connections now open)
+Mon Dec  2 20:46:47.185 [conn15] end connection 127.0.0.1:49719 (6 connections now open)
+Mon Dec  2 20:46:47.185 [initandlisten] connection accepted from 127.0.0.1:49725 #17 (7 connections now open)
+Mon Dec  2 20:47:08.225 [conn16] end connection 127.0.0.1:49723 (6 connections now open)
+Mon Dec  2 20:47:08.226 [initandlisten] connection accepted from 127.0.0.1:49729 #18 (7 connections now open)
+Mon Dec  2 20:47:17.244 [conn17] end connection 127.0.0.1:49725 (6 connections now open)
+Mon Dec  2 20:47:17.245 [initandlisten] connection accepted from 127.0.0.1:49731 #19 (7 connections now open)
+Mon Dec  2 20:47:38.262 [conn18] end connection 127.0.0.1:49729 (6 connections now open)
+Mon Dec  2 20:47:38.262 [initandlisten] connection accepted from 127.0.0.1:49735 #20 (7 connections now open)
+Mon Dec  2 20:47:47.282 [conn19] end connection 127.0.0.1:49731 (6 connections now open)
+Mon Dec  2 20:47:47.282 [initandlisten] connection accepted from 127.0.0.1:49737 #21 (7 connections now open)
+Mon Dec  2 20:48:08.299 [conn20] end connection 127.0.0.1:49735 (6 connections now open)
+Mon Dec  2 20:48:08.300 [initandlisten] connection accepted from 127.0.0.1:49741 #22 (7 connections now open)
+Mon Dec  2 20:48:17.320 [conn21] end connection 127.0.0.1:49737 (6 connections now open)
+Mon Dec  2 20:48:17.321 [initandlisten] connection accepted from 127.0.0.1:49743 #23 (7 connections now open)
+Mon Dec  2 20:48:38.334 [conn22] end connection 127.0.0.1:49741 (6 connections now open)
+Mon Dec  2 20:48:38.334 [initandlisten] connection accepted from 127.0.0.1:49747 #24 (7 connections now open)
+Mon Dec  2 20:48:47.354 [conn23] end connection 127.0.0.1:49743 (6 connections now open)
+Mon Dec  2 20:48:47.355 [initandlisten] connection accepted from 127.0.0.1:49749 #25 (7 connections now open)
+Mon Dec  2 20:49:08.365 [conn24] end connection 127.0.0.1:49747 (6 connections now open)
+Mon Dec  2 20:49:08.366 [initandlisten] connection accepted from 127.0.0.1:49753 #26 (7 connections now open)
+Mon Dec  2 20:49:17.380 [conn25] end connection 127.0.0.1:49749 (6 connections now open)
+Mon Dec  2 20:49:17.380 [initandlisten] connection accepted from 127.0.0.1:49755 #27 (7 connections now open)
+Mon Dec  2 20:49:38.413 [conn26] end connection 127.0.0.1:49753 (6 connections now open)
+Mon Dec  2 20:49:38.413 [initandlisten] connection accepted from 127.0.0.1:49759 #28 (7 connections now open)
+Mon Dec  2 20:49:47.420 [conn27] end connection 127.0.0.1:49755 (6 connections now open)
+Mon Dec  2 20:49:47.420 [initandlisten] connection accepted from 127.0.0.1:49761 #29 (7 connections now open)
+Mon Dec  2 20:50:08.477 [conn28] end connection 127.0.0.1:49759 (6 connections now open)
+Mon Dec  2 20:50:08.478 [initandlisten] connection accepted from 127.0.0.1:49765 #30 (7 connections now open)
+Mon Dec  2 20:50:17.487 [conn29] end connection 127.0.0.1:49761 (6 connections now open)
+Mon Dec  2 20:50:17.488 [initandlisten] connection accepted from 127.0.0.1:49767 #31 (7 connections now open)
+Mon Dec  2 20:50:38.542 [conn30] end connection 127.0.0.1:49765 (6 connections now open)
+Mon Dec  2 20:50:38.543 [initandlisten] connection accepted from 127.0.0.1:49771 #32 (7 connections now open)
+Mon Dec  2 20:50:47.552 [conn31] end connection 127.0.0.1:49767 (6 connections now open)
+Mon Dec  2 20:50:47.553 [initandlisten] connection accepted from 127.0.0.1:49773 #33 (7 connections now open)
+Mon Dec  2 20:51:08.605 [conn32] end connection 127.0.0.1:49771 (6 connections now open)
+Mon Dec  2 20:51:08.605 [initandlisten] connection accepted from 127.0.0.1:49777 #34 (7 connections now open)
+Mon Dec  2 20:51:17.629 [conn33] end connection 127.0.0.1:49773 (6 connections now open)
+Mon Dec  2 20:51:17.630 [initandlisten] connection accepted from 127.0.0.1:49779 #35 (7 connections now open)
+Mon Dec  2 20:51:38.644 [conn34] end connection 127.0.0.1:49777 (6 connections now open)
+Mon Dec  2 20:51:38.645 [initandlisten] connection accepted from 127.0.0.1:49783 #36 (7 connections now open)
+Mon Dec  2 20:51:47.665 [conn35] end connection 127.0.0.1:49779 (6 connections now open)
+Mon Dec  2 20:51:47.666 [initandlisten] connection accepted from 127.0.0.1:49786 #37 (7 connections now open)
+Mon Dec  2 20:52:08.670 [conn36] end connection 127.0.0.1:49783 (6 connections now open)
+Mon Dec  2 20:52:08.671 [initandlisten] connection accepted from 127.0.0.1:49809 #38 (7 connections now open)
+Mon Dec  2 20:52:12.904 [conn3] end connection 127.0.0.1:49679 (6 connections now open)
+Mon Dec  2 20:52:12.904 [conn4] end connection 127.0.0.1:49680 (5 connections now open)
+Mon Dec  2 20:52:12.905 [conn5] end connection 127.0.0.1:49681 (4 connections now open)
+Mon Dec  2 20:52:12.905 [conn6] end connection 127.0.0.1:49682 (3 connections now open)
+Mon Dec  2 20:52:12.906 [conn7] end connection 127.0.0.1:49683 (2 connections now open)
+Mon Dec  2 20:52:17.687 [conn37] end connection 127.0.0.1:49786 (1 connection now open)
+Mon Dec  2 20:52:17.687 [initandlisten] connection accepted from 127.0.0.1:49811 #39 (2 connections now open)
+Mon Dec  2 20:52:38.693 [conn38] end connection 127.0.0.1:49809 (1 connection now open)
+Mon Dec  2 20:52:38.693 [initandlisten] connection accepted from 127.0.0.1:49815 #40 (2 connections now open)
+Mon Dec  2 20:52:47.717 [conn39] end connection 127.0.0.1:49811 (1 connection now open)
+Mon Dec  2 20:52:47.718 [initandlisten] connection accepted from 127.0.0.1:49817 #41 (2 connections now open)
+Mon Dec  2 20:53:08.715 [conn40] end connection 127.0.0.1:49815 (1 connection now open)
+Mon Dec  2 20:53:08.716 [initandlisten] connection accepted from 127.0.0.1:49864 #42 (2 connections now open)
+Mon Dec  2 20:53:17.766 [conn41] end connection 127.0.0.1:49817 (1 connection now open)
+Mon Dec  2 20:53:17.767 [initandlisten] connection accepted from 127.0.0.1:49866 #43 (2 connections now open)
+Mon Dec  2 20:53:38.779 [conn42] end connection 127.0.0.1:49864 (1 connection now open)
+Mon Dec  2 20:53:38.779 [initandlisten] connection accepted from 127.0.0.1:49870 #44 (2 connections now open)
+Mon Dec  2 20:53:47.804 [conn43] end connection 127.0.0.1:49866 (1 connection now open)
+Mon Dec  2 20:53:47.804 [initandlisten] connection accepted from 127.0.0.1:49872 #45 (2 connections now open)
+Mon Dec  2 20:54:08.814 [conn44] end connection 127.0.0.1:49870 (1 connection now open)
+Mon Dec  2 20:54:08.814 [initandlisten] connection accepted from 127.0.0.1:49876 #46 (2 connections now open)
+Mon Dec  2 20:54:17.841 [conn45] end connection 127.0.0.1:49872 (1 connection now open)
+Mon Dec  2 20:54:17.842 [initandlisten] connection accepted from 127.0.0.1:49878 #47 (2 connections now open)
+Mon Dec  2 20:54:38.849 [conn46] end connection 127.0.0.1:49876 (1 connection now open)
+Mon Dec  2 20:54:38.850 [initandlisten] connection accepted from 127.0.0.1:49882 #48 (2 connections now open)
+Mon Dec  2 20:54:47.898 [conn47] end connection 127.0.0.1:49878 (1 connection now open)
+Mon Dec  2 20:54:47.899 [initandlisten] connection accepted from 127.0.0.1:49884 #49 (2 connections now open)
+Mon Dec  2 20:55:08.911 [conn48] end connection 127.0.0.1:49882 (1 connection now open)
+Mon Dec  2 20:55:08.911 [initandlisten] connection accepted from 127.0.0.1:49888 #50 (2 connections now open)
+Mon Dec  2 20:55:17.934 [conn49] end connection 127.0.0.1:49884 (1 connection now open)
+Mon Dec  2 20:55:17.934 [initandlisten] connection accepted from 127.0.0.1:49890 #51 (2 connections now open)
+Mon Dec  2 20:55:38.958 [conn50] end connection 127.0.0.1:49888 (1 connection now open)
+Mon Dec  2 20:55:38.959 [initandlisten] connection accepted from 127.0.0.1:49894 #52 (2 connections now open)
+Mon Dec  2 20:55:48.001 [conn51] end connection 127.0.0.1:49890 (1 connection now open)
+Mon Dec  2 20:55:48.001 [initandlisten] connection accepted from 127.0.0.1:49896 #53 (2 connections now open)
+Mon Dec  2 20:56:09.001 [conn52] end connection 127.0.0.1:49894 (1 connection now open)
+Mon Dec  2 20:56:09.001 [initandlisten] connection accepted from 127.0.0.1:49920 #54 (2 connections now open)
+Mon Dec  2 20:56:18.036 [conn53] end connection 127.0.0.1:49896 (1 connection now open)
+Mon Dec  2 20:56:18.037 [initandlisten] connection accepted from 127.0.0.1:49922 #55 (2 connections now open)
+Mon Dec  2 20:56:39.025 [conn54] end connection 127.0.0.1:49920 (1 connection now open)
+Mon Dec  2 20:56:39.026 [initandlisten] connection accepted from 127.0.0.1:49926 #56 (2 connections now open)
+Mon Dec  2 20:56:48.467 [conn55] end connection 127.0.0.1:49922 (1 connection now open)
+Mon Dec  2 20:56:48.467 [initandlisten] connection accepted from 127.0.0.1:49961 #57 (2 connections now open)
+Mon Dec  2 20:57:09.046 [conn56] end connection 127.0.0.1:49926 (1 connection now open)
+Mon Dec  2 20:57:09.046 [initandlisten] connection accepted from 127.0.0.1:50007 #58 (2 connections now open)
+Mon Dec  2 20:57:18.495 [conn57] end connection 127.0.0.1:49961 (1 connection now open)
+Mon Dec  2 20:57:18.496 [initandlisten] connection accepted from 127.0.0.1:50009 #59 (2 connections now open)
+Mon Dec  2 20:57:39.075 [conn58] end connection 127.0.0.1:50007 (1 connection now open)
+Mon Dec  2 20:57:39.076 [initandlisten] connection accepted from 127.0.0.1:50013 #60 (2 connections now open)
+Mon Dec  2 20:57:48.525 [conn59] end connection 127.0.0.1:50009 (1 connection now open)
+Mon Dec  2 20:57:48.526 [initandlisten] connection accepted from 127.0.0.1:50015 #61 (2 connections now open)
+Mon Dec  2 20:58:09.103 [conn60] end connection 127.0.0.1:50013 (1 connection now open)
+Mon Dec  2 20:58:09.103 [initandlisten] connection accepted from 127.0.0.1:50074 #62 (2 connections now open)
+Mon Dec  2 20:58:18.553 [conn61] end connection 127.0.0.1:50015 (1 connection now open)
+Mon Dec  2 20:58:18.553 [initandlisten] connection accepted from 127.0.0.1:50076 #63 (2 connections now open)
+Mon Dec  2 20:58:39.138 [conn62] end connection 127.0.0.1:50074 (1 connection now open)
+Mon Dec  2 20:58:39.138 [initandlisten] connection accepted from 127.0.0.1:50082 #64 (2 connections now open)
+Mon Dec  2 20:58:48.588 [conn63] end connection 127.0.0.1:50076 (1 connection now open)
+Mon Dec  2 20:58:48.588 [initandlisten] connection accepted from 127.0.0.1:50085 #65 (2 connections now open)
+Mon Dec  2 20:59:09.173 [conn64] end connection 127.0.0.1:50082 (1 connection now open)
+Mon Dec  2 20:59:09.174 [initandlisten] connection accepted from 127.0.0.1:50089 #66 (2 connections now open)
+Mon Dec  2 20:59:18.630 [conn65] end connection 127.0.0.1:50085 (1 connection now open)
+Mon Dec  2 20:59:18.631 [initandlisten] connection accepted from 127.0.0.1:50091 #67 (2 connections now open)
+Mon Dec  2 20:59:39.215 [conn66] end connection 127.0.0.1:50089 (1 connection now open)
+Mon Dec  2 20:59:39.215 [initandlisten] connection accepted from 127.0.0.1:50095 #68 (2 connections now open)
+Mon Dec  2 20:59:48.685 [conn67] end connection 127.0.0.1:50091 (1 connection now open)
+Mon Dec  2 20:59:48.685 [initandlisten] connection accepted from 127.0.0.1:50097 #69 (2 connections now open)
+Mon Dec  2 21:00:09.307 [conn68] end connection 127.0.0.1:50095 (1 connection now open)
+Mon Dec  2 21:00:09.307 [initandlisten] connection accepted from 127.0.0.1:50101 #70 (2 connections now open)
+Mon Dec  2 21:00:18.800 [conn69] end connection 127.0.0.1:50097 (1 connection now open)
+Mon Dec  2 21:00:18.801 [initandlisten] connection accepted from 127.0.0.1:50103 #71 (2 connections now open)
+Mon Dec  2 21:00:39.349 [conn70] end connection 127.0.0.1:50101 (1 connection now open)
+Mon Dec  2 21:00:39.350 [initandlisten] connection accepted from 127.0.0.1:50107 #72 (2 connections now open)
+Mon Dec  2 21:00:48.834 [conn71] end connection 127.0.0.1:50103 (1 connection now open)
+Mon Dec  2 21:00:48.835 [initandlisten] connection accepted from 127.0.0.1:50109 #73 (2 connections now open)
+Mon Dec  2 21:01:09.387 [conn72] end connection 127.0.0.1:50107 (1 connection now open)
+Mon Dec  2 21:01:09.387 [initandlisten] connection accepted from 127.0.0.1:50113 #74 (2 connections now open)
+Mon Dec  2 21:01:18.896 [conn73] end connection 127.0.0.1:50109 (1 connection now open)
+Mon Dec  2 21:01:18.897 [initandlisten] connection accepted from 127.0.0.1:50115 #75 (2 connections now open)
+Mon Dec  2 21:01:39.444 [conn74] end connection 127.0.0.1:50113 (1 connection now open)
+Mon Dec  2 21:01:39.444 [initandlisten] connection accepted from 127.0.0.1:50120 #76 (2 connections now open)
+Mon Dec  2 21:01:48.954 [conn75] end connection 127.0.0.1:50115 (1 connection now open)
+Mon Dec  2 21:01:48.954 [initandlisten] connection accepted from 127.0.0.1:50122 #77 (2 connections now open)
+Mon Dec  2 21:02:09.506 [conn76] end connection 127.0.0.1:50120 (1 connection now open)
+Mon Dec  2 21:02:09.507 [initandlisten] connection accepted from 127.0.0.1:50126 #78 (2 connections now open)
+Mon Dec  2 21:02:18.991 [conn77] end connection 127.0.0.1:50122 (1 connection now open)
+Mon Dec  2 21:02:18.991 [initandlisten] connection accepted from 127.0.0.1:50134 #79 (2 connections now open)
+Mon Dec  2 21:02:39.534 [conn78] end connection 127.0.0.1:50126 (1 connection now open)
+Mon Dec  2 21:02:39.534 [initandlisten] connection accepted from 127.0.0.1:50139 #80 (2 connections now open)
+Mon Dec  2 21:02:49.031 [conn79] end connection 127.0.0.1:50134 (1 connection now open)
+Mon Dec  2 21:02:49.032 [initandlisten] connection accepted from 127.0.0.1:50141 #81 (2 connections now open)
